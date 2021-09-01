@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: blue;
+}
+
+.app{
+    background-image: url('sunny.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease-out;
+    padding-top: 2px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+   
+}
+ .app.hot{
+     background-image: url('Hot.jpg.jpeg');
+ }
+
+ .app.cold{
+     background-image: url('snow.jpg.jpeg');
+ }
+
+ 
+ 
+
+main{
+    min-height: 90vh;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.2),rgb(0,0,0,0.75));
+    padding: 25px;
+
+}
+.search-value{
+    width: 100%;
+    margin: 0 0 75px;
+
+}
+.search-bar {
+    display: block;
+    width: 100%;
+    padding:15px;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: white;
+    margin-top: -15px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 7px;
+    
+}
+.location{
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
+.date {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px rgba(50,50,70,0.5);
+}
+.weather-value{
+    text-align: center;
+}
+.temperature{
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color:rgb(98, 97, 96);
+    border-radius: 16px;
+    padding: 15px 25px;
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 3px 6px rgba(50,50,70,0.5);
+}
+
+.weather{
+    color: seashell;
+    font-size: 38px;
+    font-weight: 700;
+    text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
